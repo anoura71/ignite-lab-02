@@ -16,12 +16,14 @@ export function Subscribe() {
   async function handleSubscribe(event: FormEvent) {
     event.preventDefault();
 
+    console.log('Novo assinante solicitado em ' + Date());
     await createSubscriber({
       variables: {
         name,
         email,
       },
     });
+    console.log('Novo assinante foi criado em ' + Date());
 
     navigate('/event');
   }
