@@ -152,3 +152,20 @@ npm i classnames
 ```bash
 npm i react-router-dom
 ```
+
+# Deploy
+
+## GitHub
+
+```bash
+git init
+git add .
+git commit -m "Ignite Lab 02"
+gh repo create ignite-lab-02
+git branch -M main
+git push -u origin main
+```
+
+## Vercel
+
+https://vercel.com/
